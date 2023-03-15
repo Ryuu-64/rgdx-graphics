@@ -12,6 +12,7 @@ public class Material {
     @Getter
     @Setter
     private ShaderProgram shaderProgram;
+
     private final HashMap<String, Attributef> attributefMap = new HashMap<>();
 
     public void applyShaderParameters() {
