@@ -34,8 +34,11 @@ public class Material {
     @AllArgsConstructor
     private static class Attributef {
         private final float value1;
+
         private final float value2;
+
         private final float value3;
+
         private final float value4;
     }
 }

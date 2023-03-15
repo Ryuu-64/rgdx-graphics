@@ -1,3 +1,5 @@
+package org.ryuu.gdx.graphics.glutils;
+
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
@@ -12,12 +14,13 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.ryuu.functional.Actions;
-import org.ryuu.gdx.graphics.glutils.Material;
 import org.ryuu.gdx.scenes.scene2d.ui.MaterialImage;
 
 public class MaterialTest {
     private ApplicationListener applicationListener;
+
     private Stage stage;
+
     private final Actions afterStageCreate = new Actions();
 
     @BeforeEach
