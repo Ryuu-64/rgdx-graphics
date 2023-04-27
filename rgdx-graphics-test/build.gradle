@@ -45,11 +45,12 @@ project(":desktop") {
         implementation project(":core")
         api "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+
+        testImplementation 'com.github.Ryuu-64:Functional:1.1.0'
         // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.2'
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
         // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
-        testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.9.2'
-        testImplementation 'com.github.Ryuu-64:Functional:1.0.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
     }
 
     test {
